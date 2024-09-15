@@ -12,7 +12,7 @@
 // ie on MAC, CMD + C is copy, but on Windows/Linux it's CTRL + C
 // This should be used whenever using one of these shortcuts
 
-#define VCMD(kc) VIM_MAC_NOMAC(LCMD(kc), LCTL(kc))
+#define VCMD(kc) VIM_MAC_NOMAC(LCTL(kc), LCTL(kc))
 #define VIM_REDO VIM_MAC_NOMAC(VCMD(LSFT(KC_Z)), VCMD(KC_Y))
 
 // These + VIM_REDO (defined above) are the main keys for each vim core vim action
